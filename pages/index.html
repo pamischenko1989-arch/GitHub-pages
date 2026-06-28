@@ -1,45 +1,40 @@
 {% extends "base.html" %}
 {% block title %}
-    LavaCactus
+    Павел — GitHub Pages
 {% endblock %}
 
 {% block body %}
 
 <div class="text-center bg-body-tertiary rounded-3">
     <img src="{% static 'images/logo.png' %}" class="bi mt-4 mb-3" width="100" height="100">
-    <h1 class="text-body-emphasis">Welcome to LavaCactus!</h1>
+    <h1 class="text-body-emphasis">Привет! Я Павел</h1>
     <p class="col-lg-8 mx-auto fs-5 text-muted">
-      Get started with this template based on Bootstrap 5. Go ahead, explore!
+      Это мой персональный сайт, собранный на LavaCactus и опубликованный через GitHub Pages
+      в рамках домашнего задания курса Otus.
     </p>
     <div class="d-inline-flex gap-2 mb-5">
-        <a class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" href="https://github.com/quillcraftsman/lavacactus/" target="_blank">Project on GitHub</a>
-      <a class="btn btn-outline-secondary btn-lg px-4 rounded-pill" href="{% url '/contact.html' %}">Contact</a>
+        <a class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" href="https://github.com/pamischenko1989-arch/GitHub-pages" target="_blank">Репозиторий на GitHub</a>
+      <a class="btn btn-outline-secondary btn-lg px-4 rounded-pill" href="{% url '/contact.html' %}">Контакты</a>
     </div>
   </div>
 
 
 <div class="container">
-  <!-- Example row of columns -->
   <div class="row">
 
-    <div class="col-lg-3">
-      <h2>Full featured template engine</h2>
-      <p>LavaCactus uses and extends Django's templating engine. If you've built sites using Django before, you'll feel right at home.</p>
+    <div class="col-lg-4">
+      <h2>Обо мне</h2>
+      <p>Интересуюсь разработкой, автоматизацией и DevOps-практиками. Этот сайт — учебный проект, в котором я настраиваю CI/CD и публикацию статики.</p>
     </div>
 
-    <div class="col-lg-3">
-      <h2>Pretty URLs</h2>
-      <p>LavaCactus can prettify URLs, so you can turn <code>/about.html</code> into a fancier <code>/about/</code> or just use <code>about.html</code>.</p>
+    <div class="col-lg-4">
+      <h2>Проект GitHub Pages</h2>
+      <p>Сайт генерируется генератором <a href="https://github.com/quillcraftsman/lavacactus/" target="_blank">LavaCactus</a>, деплоится через GitHub Actions и доступен по адресу <a href="https://pamischenko1989-arch.github.io/GitHub-pages/" target="_blank">https://pamischenko1989-arch.github.io/GitHub-pages/</a>.</p>
     </div>
 
-    <div class="col-lg-3">
-      <h2>Minification & Fingerprinting</h2>
-      <p>For maximum performance, LavaCactus can minify and fingerprint your static assets. As for your pages, LavaCactus will automatically compress them.</p>
-   </div>
-
-    <div class="col-lg-3">
-      <h2>And much more</h2>
-      <p>There's of course a lot more you can do with LavaCactus. Plus, LavaCactus's plugin framework lets you easily extend its functionality.</p>
+    <div class="col-lg-4">
+      <h2>Технологии</h2>
+      <p>Python, GitHub Actions, GitHub Pages. Локально проект можно запустить командой <code>cactus serve</code>.</p>
    </div>
 
 
